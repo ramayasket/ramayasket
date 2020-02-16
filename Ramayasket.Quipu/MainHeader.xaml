@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="Ramayasket.Quipu.MainHeader"
+			 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+			 xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+			 mc:Ignorable="d" 
+			 Height="50"
+			 FontSize="20"
+			 >
+	<StackPanel Orientation="Horizontal" Background="Gainsboro" >
+		<Label Content="Valid URLs:" VerticalAlignment="Center" Margin="20,0,0,0" ToolTip="Number of lines which are valid URLs."/>
+		<Label Name="ValidUrls" VerticalAlignment="Center" Margin="5,0,0,0" Width="150" ToolTip="Number of lines which are valid URLs."/>
+		<Label Content="Read URLs:" VerticalAlignment="Center" Margin="0,0,0,0" ToolTip="Number of URLs that have been read."/>
+		<Label Name="ReadUrls" VerticalAlignment="Center" Margin="5,0,0,0" Width="150" ToolTip="Number of URLs that have been read."/>
+		<Label Content="HTML data:" VerticalAlignment="Center" Margin="0,0,0,0" ToolTip="Number of URLs that represent HTML data."/>
+		<Label Name="HtmlUrls" VerticalAlignment="Center" Margin="5,0,0,0" Width="150" ToolTip="Number of URLs that represent HTML data."/>
+		<Label Content="Max hrefs:" VerticalAlignment="Center" Margin="0,0,0,0" ToolTip="Maximum number of hrefs."/>
+		<Label Name="MaxHrefs" VerticalAlignment="Center" Margin="5,0,0,0" Width="150" ToolTip="Maximum number of hrefs."/>
+	</StackPanel>
+</UserControl>

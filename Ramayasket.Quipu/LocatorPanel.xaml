@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="Ramayasket.Quipu.LocatorPanel"
+			 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+			 xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+			 xmlns:local="clr-namespace:Ramayasket.Quipu"
+			 mc:Ignorable="d" 
+			 Height="50"
+			 FontSize="20"
+			 >
+	<StackPanel Orientation="Horizontal" >
+		<Label Content="URL:" VerticalAlignment="Center" Margin="20,0,0,0" ToolTip="The URL to process." Height="40"/>
+		<Label Name="Url" VerticalAlignment="Center" Margin="5,0,0,0" Width="450" Foreground="Blue"  Height="40" ToolTip="The URL to process."/>
+		<Label Content="Data:" VerticalAlignment="Center" Margin="10,0,0,0" ToolTip="Data by the URL." Height="40"/>
+		<Label Name="Data" VerticalAlignment="Center" Margin="5,0,0,0" Width="450" Foreground="DarkCyan" Height="40" ToolTip="Data by the URL."/>
+		<Label Content="hrefs:" VerticalAlignment="Center" Margin="10,0,0,0" ToolTip="Data by the URL." Height="40"/>
+		<Label Name="Hrefs" VerticalAlignment="Center" Margin="5,0,0,0" Width="70" Height="40" ToolTip="Number of hrefs by this URL."/>
+		<Label Name="Winner" Content="Winner!" VerticalAlignment="Center" Margin="10,0,0,0" ToolTip="This URL has maximum number of hrefs." Height="40" Visibility="Hidden"/>
+	</StackPanel>
+</UserControl>

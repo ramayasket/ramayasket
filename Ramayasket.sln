@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ramayasket.Quipu", "Ramayasket.Quipu\Ramayasket.Quipu.csproj", "{9562D023-4D0E-45CB-B063-7A0EB69525BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ramayasket.Axel", "Ramayasket.Axel\Ramayasket.Axel.csproj", "{9E23D0AB-0053-4426-AEFA-3B8A3B97D3E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		debug|Any CPU = debug|Any CPU
+		release|Any CPU = release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9562D023-4D0E-45CB-B063-7A0EB69525BF}.debug|Any CPU.ActiveCfg = debug|Any CPU
+		{9562D023-4D0E-45CB-B063-7A0EB69525BF}.debug|Any CPU.Build.0 = debug|Any CPU
+		{9562D023-4D0E-45CB-B063-7A0EB69525BF}.release|Any CPU.ActiveCfg = release|Any CPU
+		{9562D023-4D0E-45CB-B063-7A0EB69525BF}.release|Any CPU.Build.0 = release|Any CPU
+		{9E23D0AB-0053-4426-AEFA-3B8A3B97D3E5}.debug|Any CPU.ActiveCfg = release|Any CPU
+		{9E23D0AB-0053-4426-AEFA-3B8A3B97D3E5}.debug|Any CPU.Build.0 = release|Any CPU
+		{9E23D0AB-0053-4426-AEFA-3B8A3B97D3E5}.release|Any CPU.ActiveCfg = release|Any CPU
+		{9E23D0AB-0053-4426-AEFA-3B8A3B97D3E5}.release|Any CPU.Build.0 = release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0177CF8A-E0A7-4860-B090-C5E5C1989A55}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,32 @@
+﻿<Window x:Class="Ramayasket.Quipu.MainWindow"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+		xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+		xmlns:quipu="clr-namespace:Ramayasket.Quipu"
+		mc:Ignorable="d"
+		Icon="Main.ico"
+		WindowState="Maximized"
+		Background="#ff283c52"
+		Title="Skills demonstration by Andrei Samoylov © 2019 – Quipu"
+		SizeChanged="OnSizeChanged"
+		Closing="OnClosing"
+		>
+	<DockPanel LastChildFill="True">
+		<StatusBar DockPanel.Dock="Bottom" Background="#5D6B99" Name="StatusBar" Height="35">
+			<Label Name="StatusLabel" Foreground="White" Height="30" VerticalContentAlignment="Center"/>
+		</StatusBar>
+		<StackPanel Orientation="Vertical" Width="100" MinWidth="100" Name="LeftPanel" Margin="5">
+			<Button Name="ReadButton" Content="Read" Width="80" Margin="10,16,5,5" Click="OnRead" ToolTip="Reads URLs from a file."/>
+			<Button Name="StartButton" Content="Start" Width="80" Margin="10,5,5,5" FontWeight="Black" Click="OnStart" ToolTip="Begins locator work (read and analyze URLs)."/>
+			<Button Name="CancelButton" Content="Cancel" Width="80" Margin="10,5,5,5" Click="OnCancel" ToolTip="Cancels locator (waits for current URL to complete)." IsEnabled="False"/>
+			<Button Name="ClearButton" Content="Clear" Width="80" Margin="10,5,5,5" Click ="OnClear" ToolTip="Clears URL list."/>
+		</StackPanel>
+		<quipu:MainPanel x:Name="LocatorDisplay" Orientation="Vertical" Background="Azure" Margin="10,5,10,5">
+			<quipu:MainHeader x:Name="LocatorHeader" />
+			<ScrollViewer VerticalScrollBarVisibility="Visible" CanContentScroll="True">
+				<StackPanel x:Name="LocatorList" Orientation="Vertical" />
+			</ScrollViewer>
+		</quipu:MainPanel>
+	</DockPanel>
+</Window>
