@@ -50,12 +50,9 @@ namespace Ramayasket.Quipu
 
 		void OnBoundary(bool enter)
 		{
-			WithUiThread(() =>
-			{
-				ClearButton.IsEnabled = StartButton.IsEnabled = ReadButton.IsEnabled = !(CancelButton.IsEnabled = enter);
+			ClearButton.IsEnabled = StartButton.IsEnabled = ReadButton.IsEnabled = !(CancelButton.IsEnabled = enter);
 
-				Mouse.OverrideCursor = enter ? Cursors.Wait : Cursors.Arrow;
-			});
+			Mouse.OverrideCursor = enter ? Cursors.Wait : Cursors.Arrow;
 		}
 	}
 }
