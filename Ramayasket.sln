@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ramayasket.Quipu", "Ramayasket.Quipu\Ramayasket.Quipu.csproj", "{9562D023-4D0E-45CB-B063-7A0EB69525BF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ramayasket.Mindbox", "Ramayasket.Mindbox\Ramayasket.Mindbox.csproj", "{B3146ABD-341A-4E21-BE63-1AB4EC57983C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ramayasket.Mindbox.Test", "Ramayasket.Mindbox.Test\Ramayasket.Mindbox.Test.csproj", "{6775330E-8830-474C-8E13-5D673EC48A93}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		debug|Any CPU = debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{9562D023-4D0E-45CB-B063-7A0EB69525BF}.debug|Any CPU.Build.0 = debug|Any CPU
 		{9562D023-4D0E-45CB-B063-7A0EB69525BF}.release|Any CPU.ActiveCfg = release|Any CPU
 		{9562D023-4D0E-45CB-B063-7A0EB69525BF}.release|Any CPU.Build.0 = release|Any CPU
+		{B3146ABD-341A-4E21-BE63-1AB4EC57983C}.debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3146ABD-341A-4E21-BE63-1AB4EC57983C}.debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3146ABD-341A-4E21-BE63-1AB4EC57983C}.release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3146ABD-341A-4E21-BE63-1AB4EC57983C}.release|Any CPU.Build.0 = Release|Any CPU
+		{6775330E-8830-474C-8E13-5D673EC48A93}.debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6775330E-8830-474C-8E13-5D673EC48A93}.debug|Any CPU.Build.0 = Debug|Any CPU
+		{6775330E-8830-474C-8E13-5D673EC48A93}.release|Any CPU.ActiveCfg = Release|Any CPU
+		{6775330E-8830-474C-8E13-5D673EC48A93}.release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
