@@ -20,7 +20,7 @@ namespace Ramayasket.Mindbox.Shapes
 		public Circle(double radius) : base(new Segment(CurvatureMode.Fixed, radius, radius * Math.PI * 2, null)) => Radius = radius;
 
 		/// <inheritdoc />
-		public override bool CheckIsClosed() => true;
+		public override bool IsPathClosed => true;
 
 		/// <inheritdoc />
 		public double Area => Radius * Radius * Math.PI;

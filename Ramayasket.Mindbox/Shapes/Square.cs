@@ -1,4 +1,5 @@
-﻿using Ramayasket.Mindbox.Problems;
+﻿using System;
+using Ramayasket.Mindbox.Problems;
 
 namespace Ramayasket.Mindbox.Shapes
 {
@@ -19,10 +20,10 @@ namespace Ramayasket.Mindbox.Shapes
 		/// Creates new square by its radius.
 		/// </summary>
 		/// <param name="edge">square edge.</param>
-		public Square(double edge) : base(new Segment(CurvatureMode.Zero, double.PositiveInfinity, edge, null)) => Edge = edge;
+		public Square(double edge) : base(new Segment(CurvatureMode.Zero, double.PositiveInfinity, edge, Math.PI/2)) => Edge = edge;
 
 		/// <inheritdoc />
-		public override bool CheckIsClosed() => true;
+		public override bool IsPathClosed => true;
 
 		/// <inheritdoc />
 		/// <remarks>

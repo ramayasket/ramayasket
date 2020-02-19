@@ -34,10 +34,13 @@ namespace Ramayasket.Mindbox.Shapes
 		/// <remarks>
 		/// Path is closed when one edge is larger that two others combined.
 		/// </remarks>
-		public override bool CheckIsClosed()
+		public override bool IsPathClosed
 		{
-			var sorted = (new[] {A, B, C}).OrderByDescending(x => x).ToArray();
-			return sorted[0] > sorted[1] + sorted[2];
+			get
+			{
+				var sorted = (new[] { A, B, C }).OrderByDescending(x => x).ToArray();
+				return sorted[0] < sorted[1] + sorted[2];
+			}
 		}
 
 		/// <summary>
@@ -49,6 +52,21 @@ namespace Ramayasket.Mindbox.Shapes
 
 				var p = (A + B + C) / 2;
 				return Math.Sqrt(p * (p - A) * (p - B) * (p - C));
+			}
+		}
+
+		/// <summary>
+		/// Checks if triangle is right.
+		/// </summary>
+		public bool IsRight
+		{
+			get {
+				var sorted = (new[] { A, B, C }).OrderByDescending(x => x).ToArray();
+				
+				// precision (arbitrary)
+				const double PRECISION = 0.00000001;
+
+				return Math.Abs(sorted[0] * sorted[0] - (sorted[1] * sorted[1] + sorted[2] * sorted[2])) < PRECISION;
 			}
 		}
 	}

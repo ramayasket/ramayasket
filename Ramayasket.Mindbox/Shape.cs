@@ -22,6 +22,9 @@ namespace Ramayasket.Mindbox
 		/// Verifies if shape's path is closed.
 		/// </summary>
 		/// <returns>True when path is closed, False otherwise.</returns>
-		public virtual bool CheckIsClosed() => throw new NotImplementedException();
+		public virtual bool IsPathClosed
+		{
+			get => throw new NotImplementedException();
+		}
 	}
 }
