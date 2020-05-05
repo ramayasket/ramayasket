@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ramayasket.Mindbox", "Ramay
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ramayasket.Mindbox.Test", "Ramayasket.Mindbox.Test\Ramayasket.Mindbox.Test.csproj", "{6775330E-8830-474C-8E13-5D673EC48A93}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "model", "model\model.csproj", "{F739930F-5B7E-4249-8C96-FB8090E758A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		debug|Any CPU = debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{6775330E-8830-474C-8E13-5D673EC48A93}.debug|Any CPU.Build.0 = Debug|Any CPU
 		{6775330E-8830-474C-8E13-5D673EC48A93}.release|Any CPU.ActiveCfg = Release|Any CPU
 		{6775330E-8830-474C-8E13-5D673EC48A93}.release|Any CPU.Build.0 = Release|Any CPU
+		{F739930F-5B7E-4249-8C96-FB8090E758A7}.debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F739930F-5B7E-4249-8C96-FB8090E758A7}.debug|Any CPU.Build.0 = Debug|Any CPU
+		{F739930F-5B7E-4249-8C96-FB8090E758A7}.release|Any CPU.ActiveCfg = Release|Any CPU
+		{F739930F-5B7E-4249-8C96-FB8090E758A7}.release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
